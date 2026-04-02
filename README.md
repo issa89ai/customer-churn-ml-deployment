@@ -210,6 +210,20 @@ Note
 This Dockerfile currently runs the FastAPI backend.
 The Streamlit frontend is run separately on your local machine unless you later create a separate container for it.
 
+## Screenshots
+
+### FastAPI Swagger API
+![Swagger UI](assets/swagger_ui.png)
+
+### Swagger Prediction Example
+![Swagger Result](assets/swagger_result.png)
+
+### Streamlit Interface
+![Streamlit UI](assets/streamlit_ui.png)
+
+### Streamlit Prediction Result
+![Streamlit Result](assets/streamlit_result.png)s
+
 Key Learning Outcomes
 
 This project demonstrates:
