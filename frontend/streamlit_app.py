@@ -6,7 +6,18 @@ st.set_page_config(page_title="Customer Churn Prediction", page_icon="📉", lay
 st.title("📉 Customer Churn Prediction")
 st.write("Enter customer details below to predict whether the customer is likely to churn.")
 
-API_URL = "http://127.0.0.1:8000/predict"
+import os
+import streamlit as st
+import requests
+
+st.set_page_config(page_title="Customer Churn Prediction", page_icon="📉", layout="centered")
+
+st.title("📉 Customer Churn Prediction")
+st.write("Enter customer details below to predict whether the customer is likely to churn.")
+
+# NEW (replace old API_URL)
+API_BASE_URL = st.secrets.get("API_BASE_URL", "http://127.0.0.1:8000")
+API_URL = f"{API_BASE_URL}/predict"
 
 age = st.number_input("Age", min_value=18, max_value=100, value=35)
 gender = st.selectbox("Gender", ["Male", "Female"])
