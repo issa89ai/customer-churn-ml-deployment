@@ -224,6 +224,16 @@ The Streamlit frontend is run separately on your local machine unless you later 
 ### Streamlit Prediction Result
 ![Streamlit Result](assets/streamlit_result.png)s
 
+
+## 🚀 Live Demo
+
+- 🔗 Frontend App: https://customer-churn-ml-deployment-krqepaohqdqubyfcdp9ks.streamlit.app/
+- 🔗 API Docs: https://customer-churn-api-njr0.onrender.com/docs
+
+## 🚀 Live API
+
+https://customer-churn-api-njr0.onrender.com/docs
+
 Key Learning Outcomes
 
 This project demonstrates:

@@ -1,14 +1,6 @@
 import streamlit as st
 import requests
-
-st.set_page_config(page_title="Customer Churn Prediction", page_icon="📉", layout="centered")
-
-st.title("📉 Customer Churn Prediction")
-st.write("Enter customer details below to predict whether the customer is likely to churn.")
-
 import os
-import streamlit as st
-import requests
 
 st.set_page_config(page_title="Customer Churn Prediction", page_icon="📉", layout="centered")
 
