@@ -7,9 +7,11 @@ The system is fully deployed with a FastAPI backend and a Streamlit frontend.
 
 ## 🚀 Live Demo
 
-- 🌐 Frontend App: https://customer-churn-ml-deployment-krqepaohqdqubyfcdp9ks.streamlit.app/
-- ⚙️ API Docs (Swagger): https://customer-churn-api-njr0.onrender.com/docs
-- 🔗 API Base URL: https://customer-churn-api-njr0.onrender.com
+## Live Demo
+
+- Frontend App: https://customer-churn-ml-deployment-krqepa7ohqdqubyfcdp9ks.streamlit.app
+- API Docs: https://customer-churn-api-njr0.onrender.com/docs
+- API Base URL: https://customer-churn-api-njr0.onrender.com
 
 ---
 
