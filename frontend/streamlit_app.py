@@ -1,15 +1,17 @@
 import streamlit as st
 import requests
-import os
 
-st.set_page_config(page_title="Customer Churn Prediction", page_icon="📉", layout="centered")
+st.set_page_config(
+    page_title="Customer Churn Prediction",
+    page_icon="📉",
+    layout="centered"
+)
+
+API_BASE_URL = st.secrets.get("API_BASE_URL", "http://127.0.0.1:8000")
+API_URL = f"{API_BASE_URL}/predict"
 
 st.title("📉 Customer Churn Prediction")
 st.write("Enter customer details below to predict whether the customer is likely to churn.")
-
-# NEW (replace old API_URL)
-API_BASE_URL = st.secrets.get("API_BASE_URL", "http://127.0.0.1:8000")
-API_URL = f"{API_BASE_URL}/predict"
 
 age = st.number_input("Age", min_value=18, max_value=100, value=35)
 gender = st.selectbox("Gender", ["Male", "Female"])
@@ -37,7 +39,7 @@ if st.button("Predict"):
     }
 
     try:
-        response = requests.post(API_URL, json=payload)
+        response = requests.post(API_URL, json=payload, timeout=60)
 
         if response.status_code == 200:
             result = response.json()
@@ -54,4 +56,6 @@ if st.button("Predict"):
             st.write(response.text)
 
     except requests.exceptions.ConnectionError:
-        st.error("Could not connect to FastAPI backend. Make sure the API is running on http://127.0.0.1:8000")
+        st.error("Could not connect to the backend API.")
+    except requests.exceptions.Timeout:
+        st.error("The request timed out. Please try again.")
