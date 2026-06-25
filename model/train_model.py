@@ -30,7 +30,7 @@ if "Churn" not in df.columns:
 # Encode ALL categorical feature columns except target
 label_encoders = {}
 
-categorical_cols = X_object_cols = [col for col in df.select_dtypes(include="object").columns if col != "Churn"]
+categorical_cols = [col for col in df.select_dtypes(include="object").columns if col != "Churn"]
 
 print("\nCategorical columns to encode:", categorical_cols)
 
