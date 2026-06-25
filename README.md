@@ -104,12 +104,4 @@ This project was developed as a personal portfolio project demonstrating ML depl
 ## 👤 Author
 
 **Ahmad Issa**  
-Master's in Computer Science — Data Science / Machine Learning / Applied AI  
-Bishop's University
-
----
-
-**Ahmad Issa**  
-Master's Student in Computer Science  
-Bishop's University  
-Student ID: 002230777
+Machine Learning Engineer | AI & Data Science
